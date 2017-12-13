@@ -60,8 +60,8 @@ int Injector::Inject()
 
     if (hLoadThread == nullptr)
     {
-        return ErrorCode::E_CREATE_REMOTE_THREAD_FAILED;
         ::CloseHandle(hLoadThread);
+        return ErrorCode::E_CREATE_REMOTE_THREAD_FAILED;
     }
 
     WaitForSingleObject(hLoadThread, INFINITE);
