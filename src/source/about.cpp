@@ -8,7 +8,6 @@ About::About(QWidget *parent) :
     ui(new Ui::About)
 {
     ui->setupUi(this);
-    About::setWindowTitle("About");
     QImage image(":/images/icon.png");
     ui->imageLabel->setPixmap(QPixmap::fromImage(image));
     ui->imageLabel->setScaledContents(true);

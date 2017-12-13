@@ -11,7 +11,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = hInject
 TEMPLATE = app
 
-win32:RC_ICONS += icon.ico
+win32:RC_ICONS += imgs/icon.ico
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -26,24 +26,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp \
-    injector.cpp \
-    dialog.cpp \
-    processlist.cpp \
-    about.cpp
+        source/main.cpp \
+        source/mainwindow.cpp \
+    source/injector.cpp \
+    source/dialog.cpp \
+    source/processlist.cpp \
+    source/about.cpp
 
 HEADERS += \
-        mainwindow.h \
-    injector.h \
-    dialog.h \
-    processlist.h \
-    about.h
+        header/mainwindow.h \
+    header/injector.h \
+    header/dialog.h \
+    header/processlist.h \
+    header/about.h
 
 FORMS += \
-        mainwindow.ui \
-    dialog.ui \
-    about.ui
+        ui/mainwindow.ui \
+    ui/dialog.ui \
+    ui/about.ui
 
 LIBS += -L"C:/Windows/System32/" -ladvapi32
 
