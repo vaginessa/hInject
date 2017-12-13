@@ -1,6 +1,6 @@
 # hInject
 
-hInject is a open-source DLL Injector. Written in C++ with Qt.
+hInject is an open-source DLL Injector. Written in C++ with Qt.
 
 # Features
 There is not much but It's still under development and new features will be added.
